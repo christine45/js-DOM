@@ -70,3 +70,4 @@ for (var i = 0; i<ids.length; i++){
 	newDivs.innerHTML = innerStuff[i];
 	toAdd.appendChild(newDivs);
 }
+devs[2].appendChild(toAdd);
