@@ -54,11 +54,19 @@ aliasBox.appendChild(divElement);
 
 //Final Boss
 /*8. Create your own profile.*/
-var newItem = document.createTextNode("me");
-var text node = document.createTextNode("Christine");
-newItem.appendChild(textnode);
+var devs = document.getElementsByClassName("block3 col-sm-4");
+console.log(devs);
 
-var list = document.getElementById("myName");
+var ids = ["name9", "position9", "alias9", "bio9"];
 
+var innerStuff = ["Christine", "EA", "Flyin' Hawaiian", "Born and Raised in Honolulu"];
 
+var toAdd = document.createDocumentFragment();
 
+for (var i = 0; i<ids.length; i++){
+	console.log(ids[i]);
+	var newDivs = document.createElement("div");
+	newDivs.id = ids[i];
+	newDivs.innerHTML = innerStuff[i];
+	toAdd.appendChild(newDivs);
+}
