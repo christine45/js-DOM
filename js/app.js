@@ -54,12 +54,11 @@ aliasBox.appendChild(divElement);
 
 //Final Boss
 /*8. Create your own profile.*/
-function myCreateFunction(){
-	var table = document.getElementById("myTable");
-	var row = table.insertRow(0);
-	var cell1 = row.insertCell(0);
-	var cell2 = row.insertCell(1);
-	cell1.innerHTML = "Christine";
+var newItem = document.createTextNode("me");
+var text node = document.createTextNode("Christine");
+newItem.appendChild(textnode);
 
-}
+var list = document.getElementById("myName");
+
+
 
